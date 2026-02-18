@@ -1,8 +1,8 @@
 package LinkedList.SinglyLinkedList;
 
 public class SLinkedList {
-    Node head=null;
-    Node tail=null;
+    public Node head=null;
+    public Node tail=null;
 
     public boolean isEmpty(){
         return head==null && tail==null;
@@ -115,5 +115,7 @@ public class SLinkedList {
             temp=temp.next;
         }
     }
+
+   
     
 }
