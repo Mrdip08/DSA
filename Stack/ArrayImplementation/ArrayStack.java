@@ -4,7 +4,7 @@ public class ArrayStack {
     int arr[];
     int top;
     int size;
-    ArrayStack(int arr[]){
+    public ArrayStack(int arr[]){
         this.arr=arr;
         this.top=-1;
         this.size=arr.length;
