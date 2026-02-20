@@ -1,6 +1,6 @@
 package Queues.ArrayImplementation;
 import java.util.Scanner;
-public class TestQueue {
+public class TestAQueue {
     public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the size of the array");
