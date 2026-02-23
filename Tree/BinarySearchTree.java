@@ -81,8 +81,16 @@ public class BinarySearchTree {
             if(root.left==null){
                 return root.right;
             }
-            else if(root.right==null){
+             if(root.right==null){
                 return root.left;
+            }
+           if(root.left != null && root.right != null){
+                Node temp = root.right;
+                while(temp.left != null){
+                     temp = temp.left;
+                    }
+                 root.data = temp.data;
+                 root.right = delete(root.right, temp.data);
             }
         }
         return root;
