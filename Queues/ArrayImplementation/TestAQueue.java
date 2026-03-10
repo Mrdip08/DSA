@@ -14,7 +14,7 @@ public class TestAQueue {
         aq.deQueue();
         aq.deQueue();
         aq.show();
-
+        sc.close();
     }
     
 }
