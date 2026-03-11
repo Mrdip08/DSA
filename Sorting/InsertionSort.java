@@ -2,7 +2,7 @@ package Sorting;
 
 public class InsertionSort {
     public static void main(String args[]){
-        int arr[]={5,6,8,9,14,2,10};
+        int arr[]={10,1234,9,7234,67,9181,733,197,7,3};
         int size=arr.length;
 
         for(int nums:arr){
