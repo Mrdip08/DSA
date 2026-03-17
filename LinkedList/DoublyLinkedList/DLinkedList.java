@@ -43,11 +43,11 @@ public class DLinkedList {
                 if(temp.data==after){
                     n.next=temp.next;
                     n.prev=temp;
-                    if(temp.next!=null){
-                        temp.next.prev=n;
+                    if(temp==tail){
+                        tail=n;
                     }
                     else{
-                        tail=n;
+                        temp.next.prev=n;
                     }
                     temp.next=n;
                     break;
