@@ -64,7 +64,8 @@ public class DLinkedList {
             return;
         }
         if(head==tail){
-             head=tail=null;
+            head=tail=null;
+            return;
         }
         else{
             head=head.next;
@@ -81,11 +82,13 @@ public class DLinkedList {
         }
         if(head==tail){
             head=tail=null;
+            return;
         }
         while(temp.next!=tail){
             temp=temp.next;
         }
         temp.next=null;
+        tail.prev=null;
         tail=temp;
     }
 
@@ -99,8 +102,9 @@ public class DLinkedList {
             while(temp!=null && temp.next!=null){
                 if(temp.data==after){
                     if(temp.next==tail){
+                        tail.prev=null;
                         tail=temp;
-                        temp.next=null;
+                        tail.next=null;
                         return;
                     }
                     temp.next=temp.next.next;
