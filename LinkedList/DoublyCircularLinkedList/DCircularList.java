@@ -112,11 +112,13 @@ public class DCircularList {
             return;
         }
         else{
-            while(temp!=null && temp.next!=null){
+            do{
                 if(temp.data==after){
                     if(temp.next==tail){
+                        tail.prev=null;
                         tail=temp;
-                        temp.next=null;
+                        tail.next=head;
+                        head.prev=tail;
                         return;
                     }
                     temp.next=temp.next.next;
@@ -124,7 +126,7 @@ public class DCircularList {
                     return;
                 }
                 temp=temp.next;
-            }
+            }while(temp!=head);
         }
     }
 
