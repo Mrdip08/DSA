@@ -39,23 +39,21 @@ public class SCircularList {
         Node n=new Node(data);
         Node temp=head;
         if(isEmpty()){
-            head=tail=n;
-            tail.next=head;
+            System.out.println("List is empty");
+            return;
         }
         else{
-            while(temp!=null){
+            do{
                 if(temp.data==after){
                     n.next=temp.next;
                     temp.next=n;
                     if(temp==tail){
                         tail=n;
-                        tail.next=head;
                     }
-                    break;
+                    return;
                 }
                 temp=temp.next;
-            }
-            return;
+            }while(temp!=head);
         }
     }
 
