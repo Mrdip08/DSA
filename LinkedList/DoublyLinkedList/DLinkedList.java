@@ -36,6 +36,7 @@ public class DLinkedList {
         Node n=new Node(data);
         if(isEmpty()){
             head=tail=n;
+            return;
         }
         else{
             Node temp=head;
