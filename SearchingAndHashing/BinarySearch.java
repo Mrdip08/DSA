@@ -43,7 +43,7 @@ public class BinarySearch {
                 mid=(left+right)/2;
             }
         }
-        System.out.println("ket not found in index= "+-1);
+        System.out.println("key not found in index= "+-1);
 
     }
     

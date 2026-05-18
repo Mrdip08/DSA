@@ -75,13 +75,13 @@ public class BinarySearchTree {
             root.right=delete(root.right, data);
         }
         else{
-            if(root.left==null && root.right==null){
+            if(root.left==null && root.right==null){      //here if the condition meets that this is the leaf note then this line executes
                 return null;
             }
-            if(root.left==null){
+            if(root.left==null){                     //here if the node has right child
                 return root.right;
             }
-             if(root.right==null){
+             if(root.right==null){                  //here if the node has left child
                 return root.left;
             }
            if(root.left != null && root.right != null){
